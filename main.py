@@ -93,7 +93,7 @@ def list_days():
         contents = fetch_repo_contents()
         
         day_folders = []
-        day_pattern = re.compile(r'[Dd]ay\s*(\d+)', re.IGNORECASE)
+        day_pattern = re.compile(r'[Dd]ay[_\s]*(\d+)', re.IGNORECASE)
         
         for item in contents:
             if item['type'] == 'dir':
@@ -118,7 +118,7 @@ def list_files_in_day(day_number: int):
     try:
         # First, find the exact folder name
         contents = fetch_repo_contents()
-        day_pattern = re.compile(r'[Dd]ay\s*' + str(day_number) + r'\b', re.IGNORECASE)
+        day_pattern = re.compile(r'[Dd]ay[_\s]*' + str(day_number) + r'\b', re.IGNORECASE)
         
         folder_name = None
         for item in contents:
