@@ -23,7 +23,7 @@ app.add_middleware(
 # ===== CONFIGURATION =====
 # Replace these with your actual values
 GITHUB_USERNAME = "ZOROOZZ"
-GITHUB_REPO = "ZOROOZZ"
+GITHUB_REPO = "daily-python-progress"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")  # Optional: for private repos
 GITHUB_BRANCH = "main"  # or "master"
 
