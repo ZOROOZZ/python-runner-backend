@@ -153,7 +153,7 @@ def get_file(day_number: int, filename: str):
     try:
         # Find the day folder
         contents = fetch_repo_contents()
-        day_pattern = re.compile(r'[Dd]ay\s*' + str(day_number) + r'\b', re.IGNORECASE)
+        day_pattern = re.compile(r'[Dd]ay[_\s]*' + str(day_number) + r'\b', re.IGNORECASE)
         
         folder_name = None
         for item in contents:
