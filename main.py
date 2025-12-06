@@ -58,7 +58,7 @@ def init_default_user():
     if not users:
         # Default credentials - CHANGE THESE!
         default_username = "admin"
-        default_password = "M^!@#SAINI^2006
+        default_password = "M^!@#SAINI^2006"
             "username": default_username,
             "password_hash": hashed.decode(),
             "created_at": datetime.utcnow().isoformat()
