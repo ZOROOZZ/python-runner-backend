@@ -58,9 +58,7 @@ def init_default_user():
     if not users:
         # Default credentials - CHANGE THESE!
         default_username = "admin"
-        default_password = "admin123"
-        hashed = bcrypt.hashpw(default_password.encode(), bcrypt.gensalt())
-        users[default_username] = {
+        default_password = "M^!@#SAINI^2006
             "username": default_username,
             "password_hash": hashed.decode(),
             "created_at": datetime.utcnow().isoformat()
